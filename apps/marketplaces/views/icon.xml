@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <menuitem 
+    id="marketplaces_menu" 
+    name="Marketplaces" 
+    web_icon="marketplaces,static/description/icon.png" 
+    sequence = "150"/>
+
+</odoo>

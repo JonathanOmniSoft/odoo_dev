@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <data>
+        <record id="module_category_marketplace" model="ir.module.category" >
+            <field name="name">Marketplaces Management</field>
+            <field name="description">Access group in Marketplaces </field>
+            <field name="sequence">15</field> 
+        </record>
+
+        <record id="group_marketplace_administrator" model="res.groups">
+            <field name="name">Administrator</field>
+            <field name="comment">This user will has access to the all Marketplaces features.</field>
+            <field name="category_id" ref="marketplaces.module_category_marketplace"/> 
+            <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+        </record>     
+
+        <record id="group_marketplace_basic_user" model="res.groups">
+            <field name="name">Basic User</field>
+            <field name="comment">This user will has limited access to the Marketplaces features.</field>
+            <field name="category_id" ref="marketplaces.module_category_marketplace"/>
+            <field name="implied_ids" eval="[(6, 0, [ref('marketplaces.group_marketplace_administrator'), ref('base.group_user')])]"/>
+            
+        </record>
+
+        <!-- <record model="res.users" id="base.user_admin">
+            <field eval="[(4,ref('base.user_admin'))]" name="groups_id"/>
+        </record> -->
+
+    </data>
+
+</odoo>

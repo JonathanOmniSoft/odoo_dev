@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_omni_settings" parent="base.menu_administration"
+                        sequence="90" name="Omna settings"/>
+    </data>
+</odoo>

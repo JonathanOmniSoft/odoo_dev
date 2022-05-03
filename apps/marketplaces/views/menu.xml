@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Action Menu -->
+    <menuitem id="marketplaces_action_menu" name="Action" parent="marketplaces_menu" sequence="1" />
+
+    <!-- Sub Action Menu -->
+    <menuitem id="marketplaces_action_add_menu" name="Create Product" parent="marketplaces_action_menu" sequence="1" />
+
+    <menuitem id="marketplaces_action_delete_menu" name="Delete Product" parent="marketplaces_action_menu" sequence="2" />
+
+    <menuitem id="marketplaces_action_list_menu" name="List Products" parent="marketplaces_action_menu" sequence="3" />
+
+    <menuitem id="marketplaces_action_update_menu" name="Update Products" parent="marketplaces_action_menu" sequence="4" />
+
+    <menuitem id="marketplaces_action_repack_menu" name="Repack" parent="marketplaces_action_menu" sequence="5" />
+
+    <menuitem id="marketplaces_action_ship_menu" name="Set Shipment" parent="marketplaces_action_menu" sequence="6" />
+
+
+    <!-- Report Menu -->
+    <menuitem id="marketplaces_report_menu" name="Report" parent="marketplaces_menu" sequence="2" />
+
+    <!-- Sub Action Menu -->
+    <menuitem id="marketplaces_report_sales_menu" name="Sale" parent="marketplaces_report_menu" sequence="1" />
+
+    <menuitem id="marketplaces_report_inventory_menu" name="Inventory" parent="marketplaces_report_menu" sequence="2" />
+
+    <menuitem id="marketplaces_report_reviews_menu" name="Reviews" parent="marketplaces_report_menu" sequence="3" />
+
+
+    <!-- Setting Menu -->
+    <menuitem id="marketplaces_setting_menu" name="Settings" parent="marketplaces_menu" sequence="3" />
+
+    <!-- Sub Setting Menu -->
+    <menuitem id="marketplaces_setting_config_menu" name="Marketplace API" parent="marketplaces_setting_menu" action = "action_configure_marketplaces" sequence="1" />
+
+    <!-- Sub Setting Menu -->
+    <menuitem id="marketplaces_setting_workflow_menu" name="Workflow" parent="marketplaces_setting_menu" sequence="2" />
+
+</odoo>
